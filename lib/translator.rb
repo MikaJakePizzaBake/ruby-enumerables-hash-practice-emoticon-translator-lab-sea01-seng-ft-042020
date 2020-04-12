@@ -32,7 +32,7 @@ def get_japanese_emoticon(path, emoticon)
       return value[:japanese]
     end
   end
-  if !library.include?
+  if !library.include?(emoticon)
     return "Sorry, that emoticon was not found"
   end
 end
