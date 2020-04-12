@@ -15,5 +15,11 @@ def load_library (path)
 
 def get_english_meaning (path, emoticon)
   library = YAML.load_file(path)
-  new_hash = {}
-  
+  library.each do |key, value|
+    if emoticon == value[1]
+      return key[0]
+    else
+      return "Apology"
+    end
+  end
+end
