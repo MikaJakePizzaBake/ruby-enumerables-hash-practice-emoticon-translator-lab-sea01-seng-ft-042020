@@ -10,6 +10,5 @@ def load_library (path)
         :japanese => value[1]
       }
     end
+    new_hash
   end
-  new_hash
-end
