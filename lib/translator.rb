@@ -7,7 +7,7 @@ def load_library (path)
   library.each do |key, value|
     if !library[key]
       library[key] = {
-        :english => value[0]
+        :english => value[0],
         :japanese => value[1]
       }
     end
