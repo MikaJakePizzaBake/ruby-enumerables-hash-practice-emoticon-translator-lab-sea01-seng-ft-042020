@@ -12,4 +12,5 @@ def load_library (path)
       }
     end
   end
+  new_hash
 end
