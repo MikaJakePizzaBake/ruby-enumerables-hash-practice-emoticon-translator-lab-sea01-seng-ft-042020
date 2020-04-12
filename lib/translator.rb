@@ -12,3 +12,8 @@ def load_library (path)
     end
     new_hash
   end
+
+def get_english_meaning (path, emoticon)
+  library = YAML.load_file(path)
+  new_hash = {}
+  
