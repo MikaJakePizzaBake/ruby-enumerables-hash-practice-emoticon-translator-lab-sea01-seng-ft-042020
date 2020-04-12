@@ -16,6 +16,7 @@ def load_library (path)
 def get_english_meaning (path, emoticon)
   library = YAML.load_file(path)
   library.each do |key, value|
+    binding.pry
     if emoticon == value[1]
       return key[0]
     else
